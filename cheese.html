@@ -5,6 +5,13 @@
         <meta charset="UTF-8" />
         <title>Homework 3 Part 1</title>
         <link href="cheese.css" rel="stylesheet" />
+
+        <style>
+            input:focus {
+                background-color: var(--focused-cheese);
+            }
+            /* The override wins because in the CSS cascade the internal styles have a higher priority than external stylesheets (unless it has a !important;).*/
+        </style>
     </head>
 
     <body>
