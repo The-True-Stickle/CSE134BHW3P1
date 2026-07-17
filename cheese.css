@@ -72,6 +72,7 @@ dt + dd {
 dt {
     font-size: 1.5em;
     font-style: normal;
+    background-color: var(--focused-cheese);
 }
 
 input[type="checkbox"]:checked + label {
@@ -97,6 +98,7 @@ blockquote {
     padding-top: 0.01em;
     line-height: 1.6em;
     margin-bottom: 1.2em;
+    background-color: var(--focused-cheese);
 }
 
 blockquote > p {
