@@ -1,3 +1,4 @@
+/* Deployed Netlify link: https://hw3deployed.netlify.app/ */
 @import "custom-properties.css";
 /* This is not the ideal solution since it will force the css files to load sequentially rather than in parallel such as what would've happened if both were linked through the html. This would affect performance */
 
