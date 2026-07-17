@@ -1,0 +1,10 @@
+:root {
+    
+    --light-cheese: #ffffc5;
+    --cheese-color: #FF7417;
+    --focused-cheese: #FDFBD4;
+    --warning-cheese: #FF8000;
+    --font-stack: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    background-color: var(--light-cheese);
+}

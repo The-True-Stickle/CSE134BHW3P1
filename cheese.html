@@ -4,6 +4,7 @@
     <head>
         <meta charset="UTF-8" />
         <title>Homework 3 Part 1</title>
+        <link href="cheese.css" rel="stylesheet" />
     </head>
 
     <body>
@@ -13,9 +14,11 @@
                 <header>
                     <hgroup>
                         <h1>A Short Guide to Cheese</h1>
-                        <p>by The CSE Cheese Society. Last updated <time datetime="2026-01">January 2026.</time></p>
+                        <p lang="en">by The CSE Cheese Society. Last updated <time datetime="2026-01">January 2026.</time></p>
                     </hgroup>
                 </header>
+
+                <hr />
 
                 <!-- Opening Paragraph (required to be direct child of article)-->
                 <p>Cheese is one of humanity's oldest prepared foods. People have made it
@@ -55,7 +58,7 @@
 
                         <dt>Blue cheeses</dt>
                         <dd>
-                            are veined with Penicillium roqueforti. Roquefort,
+                            are veined with <span class="latin-word">Penicillium roqueforti</span>. Roquefort,
                             Gorgonzola, and Stilton lead this family. They are salty, sharp, and
                             divisive.
                         </dd>
@@ -72,14 +75,14 @@
                  <!-- Word of Caution -->
                  <section>
                     <h2>A Word of Caution</h2>
-                    <p class="caution-statement">Warning: The American product known as "processed cheese food" is,
+                    <p id="caution-statement">Warning: The American product known as "processed cheese food" is,
                     at best, distantly related to cheese. Read the label.</p>
 
                     <p></p>
                     <blockquote>
                         <footer>As the writer Clifton Fadiman put it, </footer>
-                        <p>cheese is milk's leap toward
-                        immortality.</p>
+                        <p><q>cheese is milk's leap toward
+                        immortality.</q></p>
                     </blockquote>
                  </section>
 
@@ -116,7 +119,7 @@
                                 type="text"
                                 id="fav-cheese"
                                 name="fav-cheese"/>
-                            <input type="submit" value="Add it to the guide">
+                            <button type="submit">Add it to the guide</button>
                         </div>
 
                     </form>
@@ -125,6 +128,8 @@
                 <!-- Copyright Statement -->
                 <footer>
                     Copyright 2026 The CSE Cheese Society. Cheese responsibly.
+                    <!-- Added a link here for the assignment criteria-->
+                     <p>Created at the repository: <a href="https://github.com/The-True-Stickle/CSE134BHW3P1">found here</a></p>
                 </footer>
             </article>
         </main>

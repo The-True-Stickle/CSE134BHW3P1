@@ -1,0 +1,121 @@
+@import "custom-properties.css";
+/* This is not the ideal solution since it will force the css files to load sequentially rather than in parallel such as what would've happened if both were linked through the html. This would affect performance 
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* Essentially modifying the hgroup stuff here since I have to use the lang attribute selector and the descendant combinator for the assignment */
+p[lang|="en"] {
+    font-size: 2.4rem;
+    font-style: normal;
+}
+header p {
+    margin-top: 0.01em;
+    line-height: 0.8em;
+}
+
+h1 {
+    color: var(--cheese-color);
+    font-size: 6rem;
+    font-style: normal;
+    line-height: 1.2;
+}
+
+article > p {
+    line-height: 1.4;
+    margin-bottom: 0.8em;
+    margin-top: 0.5em;
+}
+
+hr {
+    border: 0;
+    border-top: 5px solid var(--cheese-color);
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+article {
+    font-size: 1.5rem;
+}
+
+section {
+    font-size: 1.1rem;
+}
+
+fieldset {
+    border-color: var(--cheese-color);
+}
+
+body {
+    font-style: italic;
+    line-height: 2.8em;
+    font-family: var(--font-stack);
+    margin: 4%;
+}
+
+footer {
+    font-size: 0.8rem;
+}
+
+dt::before {
+    content: "🧀 ";
+}
+
+dt + dd {
+   padding-left: 2em;
+}
+
+dt {
+    font-size: 1.5em;
+    font-style: normal;
+}
+
+input[type="checkbox"]:checked + label {
+    color: var(--cheese-color);
+    font-size:1.1em;
+}
+
+input:focus {
+    background-color: var(--focused-cheese);
+}
+
+a:hover {
+    font-size: 1.1em;
+    border-style: solid;
+    padding: 1.2em;
+}
+
+blockquote {
+    border-left: solid 0.3em;
+    padding-left: 1em;
+    padding-bottom: 0.01em;
+    padding-top: 0.01em;
+    line-height: 1em;
+}
+
+blockquote > p {
+    font-size: 1.5em;
+}
+
+#caution-statement {
+    background-color: var(--warning-cheese);
+    margin: 1em;
+    padding: 2%;
+    outline-style: solid;
+    outline-width: 0.3em;
+    outline-color: var(--cheese-color);
+}
+
+p#caution-statement {
+    text-decoration: underline;
+    font-size: 1.2em;
+}
+
+.latin-word {
+    font-weight: bold;
+    font-style: italic;
+}
